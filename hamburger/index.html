@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../hamburger/script.js"></script>
+    <link rel="stylesheet" href="../hamburger/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <form name="" action="" id="form">
+        <fieldset>
+            <legend>Create Hamburger</legend>
+            <div class="row">
+                <p>Choose Size</p>
+                <div class="radio-variant">
+                    <input type="radio" name="size" id="small" value="small" checked/>
+                    <label for="small">Small</label>
+                </div>
+                <div class="radio-variant">
+                    <input type="radio" name="size" id="large" value="large" />
+                    <label for="large">Large</label>
+                </div>
+            </div>
+            <div class="row additions">
+                <p>Additions</p>
+                <div class="checkbox-variant">
+                    <input type="checkbox" name="add" id="cheese" value="cheese"/>
+                    <label for="cheese">Cheese</label>
+                </div>
+                <div class="checkbox-variant">
+                    <input type="checkbox" name="add" id="salad" value="salad"/>
+                    <label for="salad">Salad</label>
+                </div>
+                <div class="checkbox-variant">
+                    <input type="checkbox" name="add" id="potato" value="potato"/>
+                    <label for="potato">Fried potato</label>
+                </div>
+                <div class="checkbox-variant">
+                    <input type="checkbox" name="add" id="onion" value="onion"/>
+                    <label for="onion">Onion</label>
+                </div>
+                <div class="checkbox-variant">
+                    <input type="checkbox" name="add" id="ketchup" value="ketchup"/>
+                    <label for="ketchup">Ketchup</label>
+                </div>
+            </div>
+            <div class="submit">
+                <input type="submit" value="Make Order" />
+            </div>
+        </fieldset>
+        <br />
+        <div id="result">
+            <div><b>Стоимость:</b> <span id="price">0</span> тугриков</div>
+            <div><b>Калорийность:</b> <span id="calories">0</span> кКал</div>
+        </div>
+    </form>
+</body>
+</html>
