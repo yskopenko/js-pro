@@ -36,7 +36,7 @@ new Vue({
       fetch(`${API_URL}deleteFromBasket.json`)
         .then(() => {
           const index = this.cart.findIndex((item) => item.id_product == good.id_product)
-          this.cart.splice(index - 1, 1)
+          this.cart.splice(index, 1)
         })
     },
     onSearch() {
